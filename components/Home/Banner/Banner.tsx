@@ -5,7 +5,7 @@
 "use client"
 
 import { Button } from "@nextui-org/react";
-import backgroundImage from "../../public/image 3.png"; 
+
 const Banner = () => {
   return (
     <div className="relative flex items-center justify-center h-screen bg-cover bg-center text-white"     style={{ backgroundImage: "url('/image 3.png')" }}>
