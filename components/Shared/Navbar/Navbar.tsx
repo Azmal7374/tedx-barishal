@@ -5,6 +5,14 @@
 "use client"
 import { useState } from "react";
 import { Button } from "@nextui-org/react";
+import { Inter } from "@next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap", // Ensures text is displayed while the font is loading
+});
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +21,8 @@ const Navbar = () => {
     <nav className="relative flex items-center justify-between px-6 py-4 bg-black text-white md:w-[1440px] md:h-[68.77px] pt-[12px] pb-[12px] pr-[32px] pl-[32px]">
    
       {/* Logo */}
-      <div className="text-lg font-bold text-[#E91F23] flex items-center pt-[6.44px] pb-[6.44px] pr-[7.81px] pl-[7.81px]">
+      <div className={`${inter.className} text-lg font-bold text-[#E91F23] flex items-center py-[6.44px] px-[7.81px]`}
+      >
         <span className="mr-1 text-[25.21px]">TED</span><sup className="text-[16.81px]">x</sup>
         <span className="text-white ml-1">University Of Barishal</span>
       </div>

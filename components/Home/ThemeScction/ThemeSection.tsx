@@ -10,26 +10,26 @@ const ThemeSection = () => {
       {/* Left Content */}
       <div className="text-center md:text-left max-w-lg space-y-4">
         <h4 className="text-red-600 text-sm font-semibold">THEME OF 2024</h4>
-        <h1 className="text-3xl md:text-4xl  leading-tight text-[#111111] font-[700px]  ">
+        <h1 className="text-3xl md:text-4xl  leading-tight text-[#111111]  ">
           VOICE OF TODAY, VISION OF TOMORROW
         </h1>
-        <p className="text-gray-500 text-lg font-[600]">
+        <p className="text-[#4B4B4B] text-lg ">
           TEDx University of Barishal is thrilled to welcome you with an
           unparalleled theme, <strong>“Voice of Today, Vision of Tomorrow”</strong> where
           you can immerse yourself in inspiring TEDx talks and explore
           innovative, out-of-the-box ideas.
         </p>
-        <p className="text-gray-500 text-lg font-[600]">
+        <p className="text-[#4B4B4B] text-lg ">
           “Voice of Today, Vision of Tomorrow” is crafted to reward you with
           exciting insights through a wide array of discussions. From
           groundbreaking science to the entertainment world, these diverse
           conversations ignite brilliance.
         </p>
-        <p className="text-gray-500 text-lg font-[600]">
+        <p className="text-[#4B4B4B] text-lg ">
           Join us on this remarkable journey & enrich your mind with a sphere
           of wisdom.
         </p>
-        <Button className="bg-transparent border-[1px] rounded-[8px]  w-[191px] h-[50px] border-red-600 text-[#E91F23] hover:outline-none hover:border-gray-400  mt-4 text-[16px] font-[700px]">
+        <Button className="bg-transparent border-[1px] rounded-[8px]  w-[191px] h-[50px] border-red-600 text-[#E91F23] hover:outline-none hover:border-gray-400  mt-4 text-[16px] ">
           Partner with us
         </Button>
       </div>

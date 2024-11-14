@@ -1,7 +1,10 @@
 /* eslint-disable prettier/prettier */
 
 import AboutSection from "@/components/Home/AboutSection/AboutSection";
+import AboutTEDSection from "@/components/Home/AboutTed/AboutTed";
 import Banner from "@/components/Home/Banner/Banner";
+import BrowseTalksSection from "@/components/Home/BrowseTalkSection/BrowseTalkSection";
+import JoinUsSection from "@/components/Home/JoinUsSection/JoinUsSection";
 import SponsorBanner from "@/components/Home/Sponcer/Sponcer";
 import ThemeSection from "@/components/Home/ThemeScction/ThemeSection";
 
@@ -18,6 +21,9 @@ const HomePage = () => {
            <SponsorBanner/>
            <ThemeSection/>
            <AboutSection/>
+           <JoinUsSection/>
+           <AboutTEDSection/>
+           <BrowseTalksSection/>
         </div>
     );
 };

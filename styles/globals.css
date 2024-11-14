@@ -4,16 +4,16 @@
 
 
 @keyframes marquee {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0);
   }
-  
-  .animate-marquee {
-    display: inline-block;
-    animation: marquee 20s linear infinite;
+  100% {
+    transform: translateX(-50%);
   }
-  
+}
+
+.animate-marquee {
+  display: inline-flex;
+  animation: marquee 15s linear infinite;
+  width: 100%; /* Make sure it covers the entire width of the container */
+}
