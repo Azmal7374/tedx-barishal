@@ -3,14 +3,21 @@ import { Metadata, Viewport } from "next";
 import "../styles/globals.css";
 import { Providers } from "./providers";
 // eslint-disable-next-line import/order
-import { Bebas_Neue } from "@next/font/google";
+import { Bebas_Neue, Inter } from "@next/font/google";
 
-const bebasNeue = Bebas_Neue({
+export const bebasNeue = Bebas_Neue({
   subsets: ["latin"],
-  weight: "400", // Specify weights if available
+  weight: "400",
 });
 
-export const metadata: Metadata = {
+export const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: "500",
+});
+
+
+const metadata: Metadata = {
   title: "TEDX BARISHAL",
   description: "TEDX Platform",
 };
@@ -35,7 +42,7 @@ export default function RootLayout({
           rel="icon"
         />
       </head>
-      <body className={bebasNeue.className}>
+      <body className={`bg-black `}>
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           {children}
         </Providers>

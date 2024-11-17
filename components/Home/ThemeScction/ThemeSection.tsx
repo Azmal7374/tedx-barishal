@@ -1,7 +1,9 @@
+/* eslint-disable import/order */
 /* eslint-disable react/jsx-sort-props */
 /* eslint-disable prettier/prettier */
 // components/ThemeSection.js
 "use client"
+import { bebasNeue, inter } from "@/app/layout";
 import { Button } from "@nextui-org/react";
 
 const ThemeSection = () => {
@@ -9,11 +11,11 @@ const ThemeSection = () => {
     <section className="flex flex-col md:flex-row items-center justify-center md:justify-between p-8 md:p-16 gap-8 bg-[#F5F5F5]">
       {/* Left Content */}
       <div className="text-center md:text-left max-w-lg space-y-4">
-        <h4 className="text-red-600 text-sm font-semibold">THEME OF 2024</h4>
-        <h1 className="text-3xl md:text-4xl  leading-tight text-[#111111]  ">
+        <h4 className={`${bebasNeue.className} text-[16px] text-[#E91F23]`}>THEME OF 2024</h4>
+        <h1 className={`${bebasNeue.className} text-[38px]  md:text-[52px] leading-tight text-[#111111]`}>
           VOICE OF TODAY, VISION OF TOMORROW
         </h1>
-        <p className="text-[#4B4B4B] text-lg ">
+        <p className={`${inter.className} text-[16px]  md:text-[18px] leading-tight text-[#4B4B4B]`}>
           TEDx University of Barishal is thrilled to welcome you with an
           unparalleled theme, <strong>“Voice of Today, Vision of Tomorrow”</strong> where
           you can immerse yourself in inspiring TEDx talks and explore
