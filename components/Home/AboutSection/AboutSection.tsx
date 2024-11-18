@@ -3,21 +3,22 @@
 // components/AboutSection.js
 
 "use client"
+import { bebasNeue, inter } from "@/app/layout";
 // components/AboutSection.js
 import { Button } from "@nextui-org/react";
 
 const AboutSection = () => {
   return (
     <section className="bg-red-600 text-white py-16 px-4 md:px-16 relative">
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-8">
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-6">
         {/* Left Text Section */}
         <div className="md:w-2/3">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">ABOUT TEDx UNIVERSITY OF BARISHAL</h2>
-          <p className="text-lg mb-4">
+          <h2 className={`${bebasNeue.className} text-[#FFFFFF] text-[38px] md:text-[52px]  mb-4`}>ABOUT TEDx UNIVERSITY OF BARISHAL</h2>
+          <p className={`${inter.className} text-[#FFFFFF] text-[20px] md:text-[24px] mb-4`}>
             TEDxBarishal is an independent organization created in the spirit of TED’s mission, “ideas worth spreading.”
           </p>
-          <h3 className="text-xl font-semibold mt-6 mb-2">What is TEDx?</h3>
-          <p className="text-base leading-relaxed mb-4">
+          <h3 className={`${inter.className} text-[16px] md:text-[18px] mt-6 mb-2 ml-8`}>What is TEDx?</h3>
+          <p className={`${inter.className} text-[16px] md:text-[18px] mt-6 mb-4 ml-8`}>
             In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local,
             self-organized events that bring people together to share a TED-like experience. Our event is called
             TEDxMelbourne, where x = independently organized TED event. At our TEDxMelbourne event, TEDTalks video and live
@@ -25,7 +26,7 @@ const AboutSection = () => {
             guidance for the TEDx program, but individual TEDx events, including ours, are self-organized. Find out more about
             TEDx program
           </p>
-          <Button className="border border-white text-white hover:bg-white hover:text-red-600 mt-4">
+          <Button className={`${inter.className} bg-[#E91F23] hover:bg-white  md:w-[220px] h-[50px]  text-white hover:text-[#E91F23] border  mt-3 ml-8 rounded-[8px]   text-[18px] font-[500px]`}>
             Partner with us →
           </Button>
         </div>

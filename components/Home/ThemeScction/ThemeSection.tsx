@@ -21,17 +21,17 @@ const ThemeSection = () => {
           you can immerse yourself in inspiring TEDx talks and explore
           innovative, out-of-the-box ideas.
         </p>
-        <p className="text-[#4B4B4B] text-lg ">
+        <p className={`${inter.className} text-[16px]  md:text-[18px] leading-tight text-[#4B4B4B]`}>
           “Voice of Today, Vision of Tomorrow” is crafted to reward you with
           exciting insights through a wide array of discussions. From
           groundbreaking science to the entertainment world, these diverse
           conversations ignite brilliance.
         </p>
-        <p className="text-[#4B4B4B] text-lg ">
+        <p className={`${inter.className} text-[16px]  md:text-[18px] leading-tight text-[#4B4B4B]`}>
           Join us on this remarkable journey & enrich your mind with a sphere
           of wisdom.
         </p>
-        <Button className="bg-transparent border-[1px] rounded-[8px]  w-[191px] h-[50px] border-red-600 text-[#E91F23] hover:outline-none hover:border-gray-400  mt-4 text-[16px] ">
+        <Button className={`${inter.className} bg-transparent hover:bg-white  md:w-[220px] h-[50px] border-[#E91F23] text-[#E91F23] hover:text-[#E91F23] border  mt-4 rounded-[8px]   text-[18px] font-[500px]`}>
           Partner with us
         </Button>
       </div>

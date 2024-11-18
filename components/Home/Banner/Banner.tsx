@@ -42,7 +42,7 @@ const Banner = () => {
           <Button   className={`${inter.className} bg-light w-full md:w-[220px]  h-[50px]  text-white hover:text-[#E91F23] border border-white rounded-[8px]  hover:shadow-md text-[18px] font-[500px]`}>
             Join event 
           </Button>
-          <Button className={`${inter.className} bg-white w-full md:w-[220px] h-[50px]  text-[#E91F23]  rounded-[8px]  hover:shadow-md text-[18px] font-[500px]`}>
+          <Button className={`${inter.className} bg-white w-full md:w-[220px] h-[50px]  text-[#E91F23]  rounded-[8px]   text-[18px] font-[500px]`}>
             Become our sponsor
           </Button>
         </div>

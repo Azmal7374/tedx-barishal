@@ -7,13 +7,14 @@
 
 
 
+import { bebasNeue, inter } from '@/app/layout';
 // components/EventSection.js
 import { FaMapMarkerAlt, FaCalendarAlt, FaClock } from 'react-icons/fa';
 
 const EventSection = () => {
   return (
     <section
-      className="bg-[#F5F5F5] h-[720px]  relative h-screen bg-cover bg-center flex flex-col items-center justify-center text-center text-white"
+      className="bg-[#F5F5F5] h-[720px]  relative bg-cover bg-center flex flex-col items-center justify-center text-center text-white"
       style={{
         backgroundImage: "url('/join.png')"
       }}
@@ -23,25 +24,25 @@ const EventSection = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-3xl mx-auto px-4 md:px-8">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4">JOIN TEDx BARISHAL 2025</h2>
-        <p className="text-lg md:text-xl mb-8">
+        <h2 className={`${bebasNeue.className} text-[38px]  md:text-[52px] leading-tight text-[#FFFFFF]`}>JOIN TEDx BARISHAL 2025</h2>
+        <p className={`${inter.className} text-[16px] md:text-[18px]`}>
           Join TEDx Barishal to meet with amazing ideas and people to grow your
           thoughts and grow yourself with specials.
         </p>
 
         {/* Information Cards */}
-        <div className="w-[748px] h-[187px] grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white text-black p-6 rounded-lg shadow-md flex flex-col items-center">
-            <FaMapMarkerAlt size={30} className="text-red-600 mb-2" />
-            <p className="font-semibold">IT Vaban, BU</p>
+        <div className="w-[748px] h-[187px] grid grid-cols-1  md:grid-cols-3 gap-[20px] mt-[221px]">
+          <div className="bg-white  pt-[29px] pb-[29px] pl-[27px] pr-[27px] rounded-lg shadow-md  w-[236px]">
+            <FaMapMarkerAlt size={40} className="text-[#141B34] mb-2 bg-[#F5F5F5] p-[10px] w-[52px] border-[1px] border-[#F5F5F5]  rounded-[12px]" />
+            <p className={`${inter.className} text-[16px] md:text-[18px] text-[#222222] mt-[55px]`}>IT Vaban, BU</p>
           </div>
-          <div className="bg-white text-black p-6 rounded-lg shadow-md flex flex-col items-center">
-            <FaCalendarAlt size={30} className="text-red-600 mb-2" />
-            <p className="font-semibold">1<sup>st</sup> January 2025</p>
+          <div className="bg-white  pt-[29px] pb-[29px] pl-[27px] pr-[27px] rounded-lg shadow-md  w-[236px]">
+            <FaCalendarAlt size={40} className="text-[#141B34] mb-2 bg-[#F5F5F5] p-[10px] w-[52px] border-[1px] border-[#F5F5F5]  rounded-[12px]"/>
+            <p className={`${inter.className} text-[16px] md:text-[18px] text-[#222222] mt-[55px]`}>1<sup>st</sup> January 2025</p>
           </div>
-          <div className="bg-white text-black p-6 rounded-lg shadow-md flex flex-col items-center">
-            <FaClock size={30} className="text-red-600 mb-2" />
-            <p className="font-semibold">08:30 AM</p>
+          <div className="bg-white  pt-[29px] pb-[29px] pl-[27px] pr-[27px] rounded-lg shadow-md  w-[236px]">
+            <FaClock size={40} className="text-[#141B34] mb-2 bg-[#F5F5F5] p-[10px] w-[52px] border-[1px] border-[#F5F5F5]  rounded-[12px]"/>
+            <p className={`${inter.className} text-[16px] md:text-[18px] text-[#222222] mt-[55px]`}>08:30 AM</p>
           </div>
         </div>
       </div>
