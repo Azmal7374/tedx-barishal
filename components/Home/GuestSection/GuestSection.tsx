@@ -2,31 +2,69 @@
 /* eslint-disable prettier/prettier */
 "use client"
 
+import { bebasNeue, inter } from "@/app/layout";
+
 const GuestsSection = () => {
     const guests = [
       {
         id: 1,
         name: "Mohammad Yousuf",
         title: "Senior Product Designer, Meta Digital",
-        image: "/guest2.png", 
+        image: "/guest.png", 
       },
       {
-        id: 1,
+        id: 2,
         name: "Mohammad Yousuf",
         title: "Senior Product Designer, Meta Digital",
-        image: "/guest3.png", // Replace with actual image path
+        image: "/guest.png", // Replace with actual image path
       },
       {
-        id: 1,
+        id: 3,
         name: "Mohammad Yousuf",
         title: "Senior Product Designer, Meta Digital",
-        image: "/guest1.png", 
+        image: "/guest.png", 
+      },
+      {
+        id: 4,
+        name: "Mohammad Yousuf",
+        title: "Senior Product Designer, Meta Digital",
+        image: "/guest.png", 
+      },
+      {
+        id: 5,
+        name: "Mohammad Yousuf",
+        title: "Senior Product Designer, Meta Digital",
+        image: "/guest.png", 
+      },
+      {
+        id: 6,
+        name: "Mohammad Yousuf",
+        title: "Senior Product Designer, Meta Digital",
+        image: "/guest.png", 
+      },
+      {
+        id: 7,
+        name: "Mohammad Yousuf",
+        title: "Senior Product Designer, Meta Digital",
+        image: "/guest.png", 
+      },
+      {
+        id: 8,
+        name: "Mohammad Yousuf",
+        title: "Senior Product Designer, Meta Digital",
+        image: "/guest.png", 
+      },
+      {
+        id: 9,
+        name: "Mohammad Yousuf",
+        title: "Senior Product Designer, Meta Digital",
+        image: "/guest.png", 
       },
     ];
   
     return (
-      <section className="bg-black py-16 px-8">
-        <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-12">
+      <section className="bg-black py-16 pt-[100px] pb-[80px] pr-[100px] pl-[100px] flex flex-col gap-[62px]">
+        <h2 className={`${bebasNeue.className} text-[38px]  md:text-[52px] leading-tight text-[#FFFFFF] text-center uppercase`}>
           Our Guests
         </h2>
         
@@ -49,7 +87,7 @@ const GuestsSection = () => {
         </div>
   
         <div className="flex justify-center mt-12">
-          <button className="px-6 py-3 bg-gray-800 text-white rounded hover:bg-gray-700">
+          <button className={`${inter.className} md:w-[220px] h-[50px]  text-white  border border-white mt-3 ml-8 rounded-[8px]   text-[18px] font-[500px]`}>
             Join Event
           </button>
         </div>

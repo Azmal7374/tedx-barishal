@@ -3,6 +3,7 @@
 /* eslint-disable react/self-closing-comp */
 "use client"
 
+import { inter } from "@/app/layout";
 import { useState, useEffect } from "react";
 
 // Define a type for the time left object
@@ -50,7 +51,9 @@ const CountdownSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative bg-red-500 text-white py-16 px-8">
+    <div className="mt-[100px]  bg-pink-200 p-[95px]">
+
+<section className="relative bottom-[200px]  w-[1253px] bg-red-500 text-white py-16 px-8">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-xl md:text-3xl font-bold mb-8">
           Counter Until The Big Event
@@ -72,13 +75,15 @@ const CountdownSection: React.FC = () => {
           <button className="bg-black text-white py-2 px-6 rounded-full hover:bg-gray-800 transition">
             Join Event
           </button>
-          <button className="bg-white text-red-500 border-2 border-white py-2 px-6 rounded-full hover:bg-gray-100 transition">
+          <button  className={`${inter.className} bg-light w-full md:w-[220px]  h-[50px]  text-white hover:text-[#E91F23] border border-white rounded-[8px]  hover:shadow-md text-[18px] font-[500px]`}>
             Become Our Sponsor
           </button>
         </div>
       </div>
       <div className="absolute top-0 left-0 w-full h-full bg-[url('/path/to/your/image.jpg')] bg-cover bg-center opacity-20 pointer-events-none"></div>
     </section>
+
+    </div>
   );
 };
 

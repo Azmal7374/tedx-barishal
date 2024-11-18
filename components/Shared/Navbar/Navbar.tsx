@@ -39,16 +39,17 @@ const Navbar = () => {
   leading-[140%]
   w-[135px] 
   h-[41px] 
+  p-2
   justify-center 
   items-center 
-  rounded-[8px] 
-  bg-[#E91F23] hover:text-[#E91F23]`}>
+  gap-[12px] 
+  rounded-[8px] bg-[#E91F23] `}>
         Partner with us
       </Button>
 
       {/* Mobile Menu Icon and Button */}
       <div className="md:hidden flex items-center space-x-4 ">
-      <Button className="flex 
+      <Button className={`${inter.className} flex 
       text-white 
   text-center
  text-[16px]
@@ -62,7 +63,7 @@ const Navbar = () => {
   items-center 
   gap-[12px] 
   rounded-[8px] 
-  bg-[#E91F23] hover:text-[#E91F23]">
+  bg-[#E91F23] hover:text-[#E91F23]`}>
           Partner with us
         </Button>
         <button 
