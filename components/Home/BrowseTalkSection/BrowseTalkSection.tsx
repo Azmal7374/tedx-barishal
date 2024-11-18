@@ -5,6 +5,7 @@
 import { bebasNeue, inter } from "@/app/layout";
 
 
+
 // components/BrowseTalksSection.js
 const BrowseTalksSection = () => {
     // Data for talks - replace these with real data if available
