@@ -6,7 +6,7 @@
 "use client";
 import { useState } from "react";
 import { Button } from "@nextui-org/react";
-import { inter } from "@/app/layout";
+import { inter } from "@/app/font";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

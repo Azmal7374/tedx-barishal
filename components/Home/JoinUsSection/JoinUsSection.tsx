@@ -4,8 +4,7 @@
 /* eslint-disable prettier/prettier */
 "use client";
 
-import { bebasNeue, inter } from "@/app/layout";
-// components/EventSection.js
+import { bebasNeue, inter } from "@/app/font";
 import { FaMapMarkerAlt, FaCalendarAlt, FaClock } from "react-icons/fa";
 
 const EventSection = () => {

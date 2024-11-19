@@ -3,18 +3,6 @@ import { Metadata, Viewport } from "next";
 import "../styles/globals.css";
 import { Providers } from "./providers";
 // eslint-disable-next-line import/order
-import { Bebas_Neue, Inter } from "@next/font/google";
-
-export const bebasNeue = Bebas_Neue({
-  subsets: ["latin"],
-  weight: "400",
-});
-
-export const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  weight: "500",
-});
 
 
 const metadata: Metadata = {

@@ -2,7 +2,7 @@
 /* eslint-disable prettier/prettier */
 "use cilent"
 
-import { bebasNeue, inter } from "@/app/layout";
+import { bebasNeue, inter } from "@/app/font";
 
 
 

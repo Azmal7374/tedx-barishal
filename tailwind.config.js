@@ -1,4 +1,5 @@
 import {nextui} from '@nextui-org/theme'
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -9,10 +10,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // fontFamily: {
-      //   sans: ["var(--font-sans)"],
-      //   mono: ["var(--font-mono)"],
-      // },
+      fontFamily: {
+        inter: ['var(--font-inter)', ...fontFamily.sans],
+        bebas: ['"Bebas Neue"', ...fontFamily.sans],
+      },
     },
   },
   darkMode: "class",

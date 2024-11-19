@@ -4,7 +4,7 @@
 // components/AboutSection.js
 
 "use client";
-import { bebasNeue, inter } from "@/app/layout";
+import { bebasNeue, inter } from "@/app/font";
 // components/AboutSection.js
 import { Button } from "@nextui-org/react";
 

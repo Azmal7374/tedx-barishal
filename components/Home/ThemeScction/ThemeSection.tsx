@@ -3,7 +3,7 @@
 /* eslint-disable prettier/prettier */
 // components/ThemeSection.js
 "use client";
-import { bebasNeue, inter } from "@/app/layout";
+import { bebasNeue, inter } from "@/app/font";
 import { Button } from "@nextui-org/react";
 
 const ThemeSection = () => {

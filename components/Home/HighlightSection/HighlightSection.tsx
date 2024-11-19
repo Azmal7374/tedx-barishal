@@ -3,7 +3,7 @@
 /* eslint-disable prettier/prettier */
 "use client";
 
-import { bebasNeue, inter } from "@/app/layout";
+import { bebasNeue, inter } from "@/app/font";
 
 
 const HighlightsSection = () => {

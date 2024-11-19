@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 // components/SponsorBanner.js
 // components/SponsorBanner.js
-import { bebasNeue } from "@/app/layout";
+import { bebasNeue} from "@/app/font";
 
 const SponsorBanner = () => {
   return (

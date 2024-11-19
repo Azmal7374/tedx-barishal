@@ -5,7 +5,7 @@
 // components/Banner.js
 "use client";
 
-import { bebasNeue, inter } from "@/app/layout";
+import { bebasNeue, inter } from "@/app/font";
 import { Button } from "@nextui-org/react";
 
 const Banner = () => {
@@ -65,3 +65,7 @@ const Banner = () => {
 };
 
 export default Banner;
+
+
+
+

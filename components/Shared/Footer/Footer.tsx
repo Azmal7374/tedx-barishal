@@ -2,7 +2,8 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable react/jsx-no-undef */
 
-import { bebasNeue, inter } from "@/app/layout";
+
+import { bebasNeue, inter } from "@/app/font";
 
 const Footer = () => {
   return (

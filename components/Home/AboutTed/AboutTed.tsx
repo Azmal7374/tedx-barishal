@@ -4,7 +4,7 @@
 /* eslint-disable prettier/prettier */
 "use client";
 
-import { bebasNeue, inter } from "@/app/layout";
+import { bebasNeue, inter } from "@/app/font";;
 // components/AboutTEDSection.js
 import { FaPlay } from "react-icons/fa";
 
@@ -12,21 +12,20 @@ const AboutTEDSection = () => {
   return (
     <section className="bg-[#FFFFFF] flex justify-between items-center p-[100px] ">
       {/* Left Side: Image with Overlay Play Button */}
-      <div className=" ">
-        <img
-          src="/aboutted.png" // Replace with the path to your image
-          alt="TED Logo"
-          className=" w-[532px] h-[467px] rounded-2xl"
-        />
-        {/* Play Button Overlay */}
-        <div className="rounded-[60px] bg-[rgba(255,255,255,0.3)] inline-flex p-[8px] items-center gap-[10px]">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-[58px] h-[58px] bg-black bg-opacity-50  rounded-[64.34px] border border-[rgba(255,255,255,0.14)] bg-[rgba(255,255,255,0.2)] shadow-[0px_4.587px_24.59px_0px_rgba(0,0,0,0.03)] backdrop-blur-[5.5px]p-[22px] ">
-              <FaPlay className="text-white text-[16px] h-[16px]" />
-            </div>
-          </div>
-        </div>
-      </div>
+      <div className="relative group">
+  <img
+    src="/aboutted.png" // Replace with the path to your image
+    alt="TED Logo"
+    className="w-[532px] h-[467px] rounded-2xl"
+  />
+  {/* Play Button Overlay */}
+  <div className="absolute inset-0 flex items-center justify-center rounded-2xl bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <div className="w-[58px] h-[58px] flex items-center justify-center bg-black bg-opacity-50 rounded-full border border-white shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+      <FaPlay className="text-white text-[16px]" />
+    </div>
+  </div>
+</div>
+
 
       {/* Right Side: Text Content */}
       <div className="w-[568px] flex flex-col gap-[42px] text-center md:text-left">
