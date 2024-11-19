@@ -10,8 +10,8 @@ import { Button } from "@nextui-org/react";
 
 const  AboutSection = () => {
   return (
-    <section className="bg-red-600 text-white py-16 px-4 md:px-16 relative">
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-6">
+    <section className="bg-red-600 text-white p-[57.93] relative">
+      <div className=" mx-auto flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-6">
         {/* Left Text Section */}
         <div className="md:w-2/3">
           <h2
@@ -25,10 +25,12 @@ const  AboutSection = () => {
             TEDxBarishal is an independent organization created in the spirit of
             TED’s mission, “ideas worth spreading.”
           </p>
-          <h3 className={`${inter.className} text-[16px] md:text-[18px] mt-6 mb-2 ml-8`}>
+         <div className="flex flex-col items-start gap-[24.325px] px-[10.246px] pr-[10.85px] self-stretch relative left-[60px]">
+
+         <h3 className={`${inter.className} text-[16px] md:text-[18px] mt-6 mb-2 ml-8`}>
             What is TEDx?
           </h3>
-          <p className={`${inter.className} text-[16px] md:text-[18px] mt-6 mb-4 ml-8`}>
+          <p className={`${inter.className} text-[16px] md:text-[18px] mt-6 mb-4 ml-8 font-[400px]`}>
             In the spirit of ideas worth spreading, TED has created a program
             called TEDx. TEDx is a program of local, self-organized events that
             bring people together to share a TED-like experience. Our event is
@@ -44,11 +46,12 @@ const  AboutSection = () => {
           >
             Partner with us →
           </Button>
+         </div>
         </div>
       </div>
 
       {/* Right Mosque Image Section positioned at bottom-right corner */}
-      <div className="absolute bottom-0 right-0 mb-4 mr-4">
+      <div className="absolute bottom-[-43px] right-[10px] mb-4 mr-4">
         <img
           src="/Mosjid.png"
           alt="Mosque illustration"

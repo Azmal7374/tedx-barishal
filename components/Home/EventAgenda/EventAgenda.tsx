@@ -68,29 +68,37 @@ const EventAgenda = () => {
 
   return (
     <div className="bg-white">
-      <section className="relative flex flex-col pt-[100px] pb-[100px] pr-[150px] pl-[150px]">
+      <section className="relative flex flex-col p-[100px] ]">
         <div className="w-[1140px]">
           <div className="text-center mb-8">
             <h2 className={`${bebasNeue.className} text-[#111111] text-[52px] uppercase`}>Event Agenda</h2>
           </div>
 
           <div className="space-y-6">
-            {agendaItems.slice(0, visibleCount).map((item, index) => (
-              <div
-                key={index}
-                className="flex flex-col md:flex-row md:items-center border-b border-[#EBEBEB] gap-[20px] pb-4"
-              >
-                <div className="w-[380px]">
-                  <p className={`${inter.className} text-[#190C12] text-[18px]`}>{item.time}</p>
-                  <p className={`${inter.className} text-[#190C127D] text-[16px]`}>{item.duration}</p>
-                </div>
-                <h3 className={`${inter.className} text-[#190C12] text-[24px]`}>{item.title}</h3>
-              </div>
-            ))}
-          </div>
+  {agendaItems.slice(0, visibleCount).map((item, index) => (
+  <div
+  key={index}
+  className="group flex flex-col md:flex-row md:items-center border-b border-[#EBEBEB] gap-[20px] pb-4 transition-transform duration-500 ease-out hover:translate-x-5 "
+>
+  <div className="w-[380px]">
+    <p className={`${inter.className} text-[#190C12] text-[18px]`}>
+      {item.time}
+    </p>
+    <p className={`${inter.className} text-[#190C127D] text-[16px]`}>
+      {item.duration}
+    </p>
+  </div>
+  <h3 className={`${inter.className} text-[#190C12] text-[24px]`}>
+    {item.title}
+  </h3>
+</div>
+
+  ))}
+</div>
+
 
           
-            <div className="text-center mt-8">
+            <div className="text-center mt-8 mb-[100px]">
               <button
                 onClick={loadMore}
                 className={`${inter.className} mt-[60px] bg-light md:w-[220px] h-[50px] text-[#E91F23] border border-[#E91F23] rounded-[8px] text-[18px] font-medium`}
@@ -102,40 +110,43 @@ const EventAgenda = () => {
         </div>
       </section>
 
-      <div className="mt-[100px] bg-[#FDE9E9] p-[95px]">
-        <section className="relative bottom-[200px] w-[1253px] bg-red-500 text-white py-16 px-8">
-          <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-xl md:text-3xl font-bold mb-8">
-              Counter Until The Big Event
-            </h2>
-            {timeLeft && (
-              <div className="flex justify-center items-center gap-4 md:gap-8 mb-8 flex-wrap">
-                {Object.entries(timeLeft).map(([unit, value]) => (
-                  <div
-                    key={unit}
-                    className="flex flex-col items-center bg-white text-red-500 rounded-lg px-6 py-4 md:px-8 md:py-6 shadow-md"
-                  >
-                    <p className="text-3xl md:text-5xl font-bold">{value}</p>
-                    <p className="text-sm md:text-base font-medium capitalize">
-                      {unit}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            )}
-            <div className="flex justify-center items-center gap-4">
-              <button className="bg-black text-white py-2 px-6 rounded-full hover:bg-gray-800 transition">
-                Join Event
-              </button>
-              <button
-                className={`${inter.className} bg-light w-full md:w-[220px] h-[50px] text-white hover:text-[#E91F23] border border-white rounded-[8px] hover:shadow-md text-[18px] font-medium`}
-              >
-                Become Our Sponsor
-              </button>
+      <div className="mt-[100px] bg-[#FDE9E9] p-[95px] h-[420px]">
+  <section
+    className="relative  bottom-[200px] w-[1235px] bg-cover bg-center text-white py-16 px-8 rounded-[18px]"
+    style={{ backgroundImage: "url('/agenda.png')" }}
+  >
+    <div className="flex flex-col gap-[19px] justify-center items-center">
+      <h2 className={`${bebasNeue.className} text-[31px] leading-[60px]`}>
+        Counter Until The Big Event
+      </h2>
+      {timeLeft && (
+        <div className="flex  justify-center items-center  gap-[18px]">
+          {Object.entries(timeLeft).map(([unit, value]) => (
+            <div
+              key={unit}
+              className="flex flex-col items-center bg-white text-[#E91F23] rounded-lg text-[31px]  p-[18px]"
+            >
+              <p className={`${bebasNeue.className} text-[31px] leading-[60px]`}>{value}</p>
+              <p className="text-sm md:text-base font-medium capitalize">
+                {unit}
+              </p>
             </div>
-          </div>
-        </section>
+          ))}
+        </div>
+      )}
+      <div className="flex justify-center items-center gap-[14px]">
+        <button className={`${inter.className} bg-light w-full md:w-[180px] h-[50px] text-white  border border-white rounded-[8px] hover:shadow-md text-[18px] font-medium`}>
+          Join Event
+        </button>
+        <button
+          className={`${inter.className} bg-light w-full md:w-[220px] h-[50px] text-white  border border-white rounded-[8px] hover:shadow-md text-[18px] font-medium`}
+        >
+          Become Our Sponsor
+        </button>
       </div>
+    </div>
+  </section>
+</div>
     </div>
   );
 };

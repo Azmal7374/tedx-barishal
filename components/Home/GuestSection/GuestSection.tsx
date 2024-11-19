@@ -10,86 +10,100 @@ const GuestsSection = () => {
       id: 1,
       name: "Mohammad Yousuf",
       title: "Senior Product Designer, Meta Digital",
-      image: "/guest.png",
+      image: "/card.png",
     },
     {
       id: 2,
       name: "Mohammad Yousuf",
       title: "Senior Product Designer, Meta Digital",
-      image: "/guest.png", // Replace with actual image path
+      image: "/card.png", // Replace with actual image path
     },
     {
       id: 3,
       name: "Mohammad Yousuf",
       title: "Senior Product Designer, Meta Digital",
-      image: "/guest.png",
+      image: "/card.png",
     },
     {
       id: 4,
       name: "Mohammad Yousuf",
       title: "Senior Product Designer, Meta Digital",
-      image: "/guest.png",
+      image: "/card.png",
     },
     {
       id: 5,
       name: "Mohammad Yousuf",
       title: "Senior Product Designer, Meta Digital",
-      image: "/guest.png",
+      image: "/card.png",
     },
     {
       id: 6,
       name: "Mohammad Yousuf",
       title: "Senior Product Designer, Meta Digital",
-      image: "/guest.png",
+      image: "/card.png",
     },
     {
       id: 7,
       name: "Mohammad Yousuf",
       title: "Senior Product Designer, Meta Digital",
-      image: "/guest.png",
+      image: "/card.png",
     },
     {
       id: 8,
       name: "Mohammad Yousuf",
       title: "Senior Product Designer, Meta Digital",
-      image: "/guest.png",
+      image: "/card.png",
     },
     {
       id: 9,
       name: "Mohammad Yousuf",
       title: "Senior Product Designer, Meta Digital",
-      image: "/guest.png",
+      image: "/card.png",
     },
   ];
 
   return (
-    <section className="bg-black py-16 pt-[100px] pb-[80px] pr-[100px] pl-[100px] flex flex-col gap-[62px]">
+    <section className="bg-black p-[100px] flex flex-col gap-[62px]">
       <h2
         className={`${bebasNeue.className} text-[38px]  md:text-[52px] leading-tight text-[#FFFFFF] text-center uppercase`}
       >
         Our Guests
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {guests.map((guest) => (
-          <div
-            key={guest.id}
-            className="bg-gray-900 rounded-lg overflow-hidden"
-          >
-            <div className="relative">
-              <img
-                src={guest.image}
-                alt={guest.name}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute bottom-0 left-0 w-full bg-red-600 p-4 text-white">
-                <h3 className="font-semibold">{guest.name}</h3>
-                <p className="text-sm">{guest.title}</p>
-              </div>
-            </div>
-          </div>
-        ))}
+      <div className="grid grid-cols-3 gap-[35.908px]">
+  {guests.map((guest) => (
+    <div key={guest.id}>
+      <div className="relative ">
+        <img
+          src={guest.image}
+          alt={guest.name}
+          className="w-full h-full object-cover"
+        />
+    <div className="flex flex-col gap-[5px] bg-red-600 p-4 text-white group ">
+      <p  className={`${inter.className} font-[400] text-[12px] group-hover:transform group-hover:-translate-y-2 transition-transform duration-500 ease-in-out leading-none`}>Meet Our Team</p>
+    <div className="flex flex-col items-start">
+  {guest.name.split(" ").map((part, index) => (
+    <h3
+      key={index}
+      className={`${bebasNeue.className} font-[400] text-[32px] group-hover:transform group-hover:-translate-y-2 transition-transform duration-500 ease-in-out leading-none`}
+    >
+      {part}
+    </h3>
+  ))}
+</div>
+
+
+  <p className={`${inter.className} font-[400] text-[14px] group-hover:transform group-hover:-translate-y-2 transition-transform duration-500 ease-in-out leading-none`}>
+    {guest.title}
+  </p>
+</div>
+
+
       </div>
+    </div>
+  ))}
+</div>
+
 
       <div className="flex justify-center mt-12">
         <button

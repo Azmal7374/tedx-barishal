@@ -46,7 +46,7 @@ const BrowseTalksSection = () => {
               <img
                 src={talk.image}
                 alt={talk.title}
-                className="w-full h-48 md:h-64 object-cover overflow-hidden transition-transform transform hover:scale-105 rounded-2xl"
+                className="md:w-full h-48 md:h-64 object-cover overflow-hidden transition-transform transform hover:scale-105 rounded-2xl"
               />
               <div className="">
                 <h3  className={`${inter.className} mt-[10px] text-base text-[16px] md:text-[18px] text-[#111111] font-[400px]`}>{talk.title} </h3>
