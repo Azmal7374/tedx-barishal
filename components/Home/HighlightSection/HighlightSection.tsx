@@ -1,10 +1,11 @@
+/* eslint-disable react/jsx-key */
+/* eslint-disable prettier/prettier */
 /* eslint-disable react/self-closing-comp */
 /* eslint-disable react/jsx-sort-props */
 /* eslint-disable prettier/prettier */
 "use client";
 
 import { bebasNeue, inter } from "@/app/font";
-
 
 const HighlightsSection = () => {
   const highlights = [
@@ -54,42 +55,45 @@ const HighlightsSection = () => {
 
   return (
     <section className="bg-[#FFFFFF] flex flex-col md:flex-row items-start p-[100px]">
-    {/* Left side heading */}
-    <div className="md:w-1/3 sticky top-20">
-      <h2 className={`${bebasNeue.className} text-[#111111] text-[52px] uppercase leading-[1.2]`}>
-        Something You Don’t Want to Miss
-      </h2>
-    </div>
-  
-    {/* Right side content */}
-    <div className="w-[710px] flex flex-col gap-[41px]">
-      {highlights.map((highlight) => (
-        <div
-          key={highlight.id}
-          className="flex items-start space-x-6 pb-4 border-b border-[#EBEBEB]"
+      {/* Left side heading */}
+      <div className="md:w-1/3 sticky top-20">
+        <h2
+          className={`${bebasNeue.className} text-[#111111] text-[52px] uppercase leading-[120%]`}
         >
-          <img
-            src={highlight.image}
-            alt={highlight.title}
-            className="w-[166px] h-[166px] rounded-[100px] object-cover transition-transform transform hover:scale-105"
-          />
-          <div>
-            <h3
-              className={`${inter.className} text-base text-[16px] md:text-[24px] text-[#111111] font-semibold`}
-            >
-              {highlight.title}
-            </h3>
-            <p
-              className={`${inter.className} mt-[10px] text-base text-[16px] md:text-[18px] text-[#404040] font-normal`}
-            >
-              {highlight.description}
-            </p>
+          Something You Don’t Want to Miss
+        </h2>
+      </div>
+
+      {/* Right side content */}
+      <div className="w-[710px] flex flex-col gap-[41px] pb-[30px]">
+        {highlights.map((highlight) => (
+        <div   key={highlight.id} className="flex flex-col gap-[32px]">
+            <div
+          
+            className="flex items-start space-x-6 pb-4 border-b border-[#CDCDCD]"
+          >
+            <img
+              src={highlight.image}
+              alt={highlight.title}
+              className="w-[166px] h-[166px] rounded-[100px] object-cover transition-transform transform hover:scale-105"
+            />
+            <div>
+              <h3
+                className={`${inter.variable} text-base text-[16px] md:text-[24px] text-[#111111] font-semibold leading-[140%]`}
+              >
+                {highlight.title}
+              </h3>
+              <p
+                className={`${inter.variable} mt-[10px] text-base text-[16px] md:text-[18px] text-[#404040] font-normal leading-[150%]`}
+              >
+                {highlight.description}
+              </p>
+            </div>
           </div>
         </div>
-      ))}
-    </div>
-  </section>
-  
+        ))}
+      </div>
+    </section>
   );
 };
 

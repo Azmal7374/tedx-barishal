@@ -12,19 +12,15 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="relative flex items-center justify-between px-6 py-4 bg-black text-white md:h-[68.77px] pt-[12px] pb-[12px] pr-[32px] pl-[32px]">
+    <nav className="relative flex items-center justify-between bg-black text-white  md:w-[1440px] h-[89px] md:h-[68.77px] px-[16px] py-[12px] md:pt-[12px] md:pb-[12px] md:pr-[32px] md:pl-[32px]">
       {/* Logo */}
-      <div
-        className={` ${inter} text-lg font-bold text-[#E91F23] flex items-center py-[6.44px] px-[7.81px]`}
-      >
-        <span className="mr-1 text-[25.21px]">TED</span>
-        <sup className="text-[16.81px]">x</sup>
-        <span className="text-white ml-1">University Of Barishal</span>
+      <div className=" ">
+       <img src="/Logo.png" alt="" />
       </div>
 
       {/* Desktop Navigation Links */}
       <div
-        className={`${inter.className} hidden md:flex space-x-6 text-white text-[16px]`}
+        className={`${inter.variable} hidden md:flex space-x-6 text-white text-[16px]`}
       >
         <a href="#events" className="border-white hover:border-b-2">
           Events
@@ -39,7 +35,7 @@ const Navbar = () => {
 
       {/* Call-to-Action Button (Desktop only) */}
       <Button
-        className={`${inter.className}  hidden md:block    
+        className={`${inter.variable}  hidden md:block    
       text-white 
   text-center
  text-[16px]
@@ -59,7 +55,7 @@ const Navbar = () => {
       {/* Mobile Menu Icon and Button */}
       <div className="md:hidden flex items-center space-x-4 ">
         <Button
-          className={`${inter.className} flex 
+          className={`${inter.variable} flex 
       text-white 
   text-center
  text-[16px]

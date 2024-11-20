@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable import/order */
 /* eslint-disable react/jsx-sort-props */
 /* eslint-disable prettier/prettier */
@@ -8,9 +9,9 @@ import { bebasNeue, inter } from "@/app/font";
 // components/AboutSection.js
 import { Button } from "@nextui-org/react";
 
-const  AboutSection = () => {
+const AboutSection = () => {
   return (
-    <section className="bg-red-600 text-white p-[57.93] relative">
+    <section className="bg-red-600 text-white p-[100px] relative">
       <div className=" mx-auto flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-6">
         {/* Left Text Section */}
         <div className="md:w-2/3">
@@ -20,33 +21,39 @@ const  AboutSection = () => {
             ABOUT TEDx UNIVERSITY OF BARISHAL
           </h2>
           <p
-            className={`${inter.className} text-[#FFFFFF] text-[20px] md:text-[24px] mb-4`}
+            className={`${inter.variable} text-[#FFFFFF] text-[20px] md:text-[24px] mb-4`}
           >
             TEDxBarishal is an independent organization created in the spirit of
             TED’s mission, “ideas worth spreading.”
           </p>
-         <div className="flex flex-col items-start gap-[24.325px] px-[10.246px] pr-[10.85px] self-stretch relative left-[60px]">
-
-         <h3 className={`${inter.className} text-[16px] md:text-[18px] mt-6 mb-2 ml-8`}>
-            What is TEDx?
-          </h3>
-          <p className={`${inter.className} text-[16px] md:text-[18px] mt-6 mb-4 ml-8 font-[400px]`}>
-            In the spirit of ideas worth spreading, TED has created a program
-            called TEDx. TEDx is a program of local, self-organized events that
-            bring people together to share a TED-like experience. Our event is
-            called TEDxMelbourne, where x = independently organized TED event.
-            At our TEDxMelbourne event, TEDTalks video and live speakers will
-            combine to spark deep discussion and connection in a small group.
-            The TED Conference provides general guidance for the TEDx program,
-            but individual TEDx events, including ours, are self-organized. Find
-            out more about TEDx program
-          </p>
-          <Button
-            className={`${inter.className} bg-[#E91F23] hover:bg-white  md:w-[220px] h-[50px]  text-white hover:text-[#E91F23] border  mt-3 ml-8 rounded-[8px]   text-[18px] font-[500px]`}
-          >
-            Partner with us →
-          </Button>
-         </div>
+          <div className="flex flex-col items-start gap-[24.325px] px-[10.246px] pr-[10.85px] self-stretch relative left-[60px]">
+            <div>
+              <h3
+                className={`${inter.variable} text-[16px] md:text-[18px] mt-6 mb-2 ml-8`}
+              >
+                What is TEDx?
+              </h3>
+              <p
+                className={`${inter.variable} text-[16px] md:text-[18px] mt-6 mb-4 ml-8 font-[400px]`}
+              >
+                In the spirit of ideas worth spreading, TED has created a
+                program called TEDx. TEDx is a program of local, self-organized
+                events that bring people together to share a TED-like
+                experience. Our event is called TEDxMelbourne, where x =
+                independently organized TED event. At our TEDxMelbourne event,
+                TEDTalks video and live speakers will combine to spark deep
+                discussion and connection in a small group. The TED Conference
+                provides general guidance for the TEDx program, but individual
+                TEDx events, including ours, are self-organized. Find out more
+                about TEDx program
+              </p>
+            </div>
+            <Button
+              className={`${inter.variable} bg-[#E91F23] hover:bg-white  md:w-[220px] h-[50px]  text-white hover:text-[#E91F23] border  mt-3 ml-8 rounded-[8px]   text-[18px] font-[500px]`}
+            >
+              Partner with us →
+            </Button>
+          </div>
         </div>
       </div>
 

@@ -8,5 +8,5 @@ export const bebasNeue = Bebas_Neue({
 
 export const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-inter-tight",
 });

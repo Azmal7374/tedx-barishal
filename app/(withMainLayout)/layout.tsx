@@ -11,7 +11,7 @@ const layout = ({ children }: { children: ReactNode }) => {
         <Navbar />
         <div className="">{children}</div>
       </div>
-      <div className="pl-[30px] w-[1440px]">
+      <div className="w-[1440px]">
         <Footer/>
       </div>
     </>
