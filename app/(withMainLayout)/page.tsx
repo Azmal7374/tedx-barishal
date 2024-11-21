@@ -19,7 +19,7 @@ import ThemeSection from "@/components/Home/ThemeScction/ThemeSection";
 
 const HomePage = () => {
     return (
-        <div className="w-[1440px]">
+        <div className="">
            <Banner/>
            <SponsorBanner/>
            <ThemeSection/>

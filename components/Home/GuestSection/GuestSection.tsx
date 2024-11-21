@@ -64,23 +64,24 @@ const GuestsSection = () => {
   ];
 
   return (
-    <section className="bg-black p-[100px] flex flex-col gap-[62px]">
+    <section className="bg-black px-[16px] py-[60px] sm:px-[100px] sm:py-[100px] flex flex-col gap-[62px] ">
       <h2
-        className={`${bebasNeue.className} text-[38px]  md:text-[52px] leading-[120%] text-[#FFFFFF] text-center uppercase`}
+        className={`${bebasNeue.className} text-[38px] md:text-[52px] leading-[120%] text-[#FFFFFF] text-center uppercase`}
       >
         Our Guests
       </h2>
 
-      <div className="grid grid-cols-3 gap-[20px] ">
+      {/* Responsive Grid */}
+      <div className="flex flex-row flex-wrap md:[20px] lg:gap-[20px] ">
         {guests.map((guest) => (
-          <div className="w-[400px] h-[501px]" key={guest.id}>
-            <div className="">
+          <div className=" w-[370px] lg:w-[400px] h-[501px] mx-auto" key={guest.id}>
+            <div>
               <img
                 src={guest.image}
                 alt={guest.name}
                 className="w-full h-full object-cover"
               />
-              <div className="flex flex-col gap-[5px] bg-red-600 p-4 text-white group relative bottom-[138px] w-[400px] h-[138px]">
+              <div className="flex flex-col gap-[5px] bg-red-600 p-4 text-white group relative bottom-[138px] w-full h-[138px]">
                 <p
                   className={`${inter.variable} font-[500] text-[12px] group-hover:transform group-hover:-translate-y-2 transition-transform duration-500 ease-in-out leading-none tracking-[-0.6px] `}
                 >
@@ -108,9 +109,9 @@ const GuestsSection = () => {
         ))}
       </div>
 
-      <div className="flex justify-center  flex-col items-center ">
+      <div className="flex justify-center flex-col items-center">
         <button
-          className={`${inter} md:w-[174px] h-[50px]  text-[#FFFFFF]  border border-[#FFFFFF] py-[9px] px-[15px] rounded-[8px]   text-[17px] font-[400px] leading-[121%]`}
+          className={`${inter.variable} w-[174px] h-[50px] text-[#FFFFFF] border border-[#FFFFFF] py-[9px] px-[15px] rounded-[8px] text-[17px] font-[400px] leading-[121%]`}
         >
           Join Event
         </button>

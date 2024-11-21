@@ -89,39 +89,36 @@ const EventAgenda = () => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
-    // Initialize the countdown on the client side
     setTimeLeft(calculateTimeLeft());
 
     return () => clearInterval(timer);
   }, []);
 
   return (
-    <div className="bg-[#FFF]">
-      <section className="p-[100px]">
-        <div className=" flex flex-col gap-[60px]">
-            <h2
-              className={`${bebasNeue.className} text-[#111111] text-[52px] uppercase text-center`}
-            >
-              Event Agenda
-            </h2>
+    <div className="bg-white">
+      <section className="p-6 sm:p-10 lg:p-[100px]">
+        <div className="flex flex-col gap-6 lg:gap-[60px]">
+          <h2
+            className={`${bebasNeue.className} text-[#111111] text-2xl sm:text-3xl lg:text-[52px] uppercase text-center`}
+          >
+            Event Agenda
+          </h2>
 
-          <div className="space-y-6 ">
+          <div className="space-y-4 sm:space-y-6">
             {agendaItems.slice(0, visibleCount).map((item, index) => (
               <div
                 key={index}
-                className="group flex flex-col md:flex-row md:items-center border-b border-[#EBEBEB] gap-[20px] pb-4 transition-transform duration-500 ease-out hover:translate-x-5 "
+                className="group flex flex-col sm:flex-row sm:items-center border-b border-[#EBEBEB] gap-4 sm:gap-[20px] pb-4 transition-transform duration-500 ease-out hover:translate-x-3 sm:hover:translate-x-5"
               >
-                <div className="w-[380px]">
-                  <p className={`${inter.variable} text-[#190C12] text-[18px] font-[600] leading-[150%]`}>
+                <div className="sm:w-[380px]">
+                  <p className={`${inter.variable} text-[#190C12] text-sm sm:text-[18px] font-semibold`}>
                     {item.time}
                   </p>
-                  <p
-                    className={`${inter.variable} text-[#190C127D] text-[16px] leading-[150%]`}
-                  >
+                  <p className={`${inter.variable} text-[#190C127D] text-xs sm:text-[16px]`}>
                     {item.duration}
                   </p>
                 </div>
-                <h3 className={`${inter.variable} text-[#190C12] text-[24px] tracking-[-0.3px] leading-[133.33%]`}>
+                <h3 className={`${inter.variable} text-[#190C12] text-lg sm:text-[24px]`}>
                   {item.title}
                 </h3>
               </div>
@@ -131,7 +128,7 @@ const EventAgenda = () => {
           <div className="text-center  ">
             <button
               onClick={loadMore}
-              className={`${inter.variable}  bg-light md:w-[220px] h-[50px] text-[#E91F23] border border-[#E91F23] rounded-[8px] text-[18px] font-semibold`}
+              className={`${inter.variable}  bg-light w-[220px] h-[50px] text-[#E91F23] border border-[#E91F23] rounded-[8px] text-[18px] font-semibold`}
             >
               Load more agenda
             </button>
@@ -139,42 +136,44 @@ const EventAgenda = () => {
         </div>
       </section>
 
-      <div className="mt-[150px] bg-[#FDE9E9] pt-[95px] pb-[100px] pr-[93.5px] pl-[93.5px] h-[500px]">
+      <div className="mt-[150px] bg-[#FDE9E9] pt-[95px] sm:pb-[100px] sm:pr-[93.5px] sm:pl-[93.5px]  sm:h-[500px]">
         <section
-          className="relative  bottom-[250px] w-[1253px] h-[528px] bg-cover bg-center text-white py-16 px-8 "
+          className="relative bottom-[200px] sm:bottom-[250px] max-w-full lg:w-[1253px] h-[721px] sm:h-[528px] bg-cover bg-center text-white py-10 px-6 rounded-[30px]"
           style={{ backgroundImage: "url('/agenda.png')" }}
         >
-          <div className="flex flex-col gap-[32px] justify-center items-center  h-[333px]">
-            <h2 className={`${bebasNeue.className} text-[31px] leading-[60px]`}>
+          <div className="flex flex-col gap-6 lg:gap-[32px] justify-center items-center h-[333px]">
+            <h2 className={`${bebasNeue.className} mt-[100px] text-lg sm:text-xl lg:text-[31px] leading-[60px]`}>
               Counter Until The Big Event
             </h2>
             {timeLeft && (
-              <div className="flex  justify-center items-center  gap-[24px] pr-[50px] pl-[50px]">
+              <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-[24px]">
                 {Object.entries(timeLeft).map(([unit, value]) => (
                   <div
                     key={unit}
-                    className="flex flex-col items-center bg-white text-[#E91F23] rounded-[12px] text-[31px]  pt-[30px] pb-[30px] w-[118px]"
+                    className="flex flex-col items-center bg-white text-[#E91F23] rounded-lg p-4 sm:pt-[30px] sm:pb-[30px] w-[80px] sm:w-[118px]"
                   >
                     <p
-                      className={`${bebasNeue.className} text-[52px] leading-[120%] font-normal text-[#E91F23]`}
+                       className={`${bebasNeue.className} text-[52px] leading-[120%] font-normal text-[#E91F23]`}
                     >
                       {value}
                     </p>
-                    <p className={`${inter.className} text-[16px] leading-[150%] font-normal text-[#E91F23]`}>
+                    <p
+                     className={`${inter.className} text-[16px] leading-[150%] font-normal text-[#E91F23] `}
+                    >
                       {unit}
                     </p>
                   </div>
                 ))}
               </div>
             )}
-            <div className="flex justify-center items-center gap-[24px]  h-[181px] w-[545px] px-[70px]">
+            <div className="sm:flex justify-center items-center gap-[24px]  h-[181px] sm:w-[545px] px-[70px]">
               <button
-                className={`${inter.variable} bg-light  h-[50px] md:w-[161px] text-white  border border-white rounded-[8px] hover:shadow-md text-[18px] hover:text-[#E91F23] font-medium leading-[140%]`}
+               className={`${inter.variable} bg-light  h-[50px] w-[230px] sm:w-[161px] text-white  border border-white rounded-[8px] hover:shadow-md text-[18px] hover:text-[#E91F23] font-medium leading-[140%]`}
               >
                 Join Event
               </button>
               <button
-                className={`${inter.variable} bg-light w-full md:w-[230px] h-[50px] text-[#E91F23]  border bg-[#FFF]  rounded-[8px] hover:shadow-md text-[16px] font-medium  leading-[140%]`}
+                className={`${inter.variable} bg-light   w-[230px] sm:w-[230px] h-[50px] text-[#E91F23]  border bg-[#FFF]  rounded-[8px] hover:shadow-md text-[16px] font-medium mt-4 sm:mt-0  leading-[140%]`}
               >
                 Become Our Sponsor
               </button>

@@ -30,7 +30,7 @@ export default function RootLayout({
           rel="icon"
         />
       </head>
-      <body className={`bg-black `}>
+      <body >
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           {children}
         </Providers>
